@@ -16,4 +16,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  server: { // Or `preview` if you are using `vite preview` command
+    host: true, // This allows the server to be accessible externally
+  },
+  preview: { // Add this section for the preview server
+    allowedHosts: [
+      "atelier.jesspete.shop"
+    ],
+  },
 });
