@@ -370,21 +370,21 @@ stateDiagram-v2
         [*] --> InputEnabled
         InputEnabled: Email input enabled
         InputEnabled: Submit button active
-        InputEnabled: Placeholder: "your@email.com"
+        InputEnabled: Placeholder your@email.com
     }
 
     state Loading {
         [*] --> Processing
         Processing: Input disabled
         Processing: Button shows spinner SVG
-        Processing: Button text: "Joining…"
+        Processing: Button text "Joining…"
         Processing: 1500ms simulated API call
     }
 
     state Success {
         [*] --> Confirmed
         Confirmed: Gold checkmark icon (✓)
-        Confirmed: Message: "Welcome to the atelier"
+        Confirmed: Message "Welcome to the atelier"
         Confirmed: Email field cleared
         Confirmed: Form replaced by confirmation
     }
