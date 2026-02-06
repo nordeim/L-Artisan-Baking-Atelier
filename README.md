@@ -394,7 +394,7 @@ stateDiagram-v2
         Failed: Input border turns #A04040
         Failed: Shake animation (0.5s)
         Failed: Error message shown
-        Failed: Auto-reset timer: 3000ms
+        Failed: Auto-reset timer 3000ms
     }
 
     Idle --> Loading : submit (email valid)
